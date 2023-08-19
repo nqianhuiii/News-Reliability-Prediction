@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Fake News Prediction",
+  "version": "1.0",
+  "description": "This extension will produce the relaibility of the news",
+  "icons": {
+    "48": "search.png",
+    "96": "search.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "search.png",
+      "48": "search.png",
+      "128": "search.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scrape.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["/static/search.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

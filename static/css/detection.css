@@ -1,0 +1,34 @@
+.center-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title, .paragraph{
+    text-align: center;
+}
+
+.title{
+    padding-top: 130px;
+}
+
+.news-collection{
+    resize: none;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.news-collection:focus{
+    box-shadow: none;
+    border: 1px solid black;
+    box-shadow: 0 0 10px grey;
+}
+
+.submit-button{
+    display: block;
+    margin: 20px auto;
+}
+
+.pred_result{
+    padding: 15px;
+}
